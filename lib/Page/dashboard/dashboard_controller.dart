@@ -14,13 +14,13 @@ class Dashboardcontroller extends GetxController {
       if (!Get.isRegistered<ProductController>()) {
         Get.put(ProductController());
       } else {
-        Get.find<Databsehelper>();
+        Get.find<ProductController>();
       }
     }
-    if (!Get.isRegistered<Databsehelper>()) {
-      Get.put(Databsehelper());
-    } else {
-      Get.find<Databsehelper>();
-    }
+    // if (!Get.isRegistered<Databsehelper>()) {
+    //   Get.put(Databsehelper());
+    // } else {
+    //   Get.find<Databsehelper>();
+    // }
   }
 }
