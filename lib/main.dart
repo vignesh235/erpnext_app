@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'Controller/db_binding.dart';
 import 'Controller/routes.dart';
 
 void main() {
@@ -12,8 +13,9 @@ class CupertinoStoreApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      initialRoute: Routes.bottomnavigation,
+      initialRoute: Routes.landingpage,
       getPages: getPages,
+      initialBinding: DatabaseBinding(),
       debugShowCheckedModeBanner: false,
     );
   }

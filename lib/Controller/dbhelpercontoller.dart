@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:sqflite/sqflite.dart' as sql;
 import 'package:get/get.dart';
 
@@ -5,13 +7,14 @@ class Databsehelper extends GetxController {
   @override
   void onInit() {
     super.onInit();
+    print("ooooooooooooooooooooooooooooooooooooooooooo");
+
     initializeDatabase();
   }
 
   static Future<void> initializeDatabase() async {
     final database = await openDatabase();
-    print(
-        "------------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxx--------------------");
+    print("ooooooooooooooooooooooooooooooooooooooooooo");
     print(database);
     if (database == null) {
       await createTables(database);
